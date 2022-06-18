@@ -1,0 +1,292 @@
+<html>
+    <head>
+        <title>
+            Take a tour site
+        </title>
+      
+    </head>
+
+    <body style="background-color: #0D283D;">
+
+         <!---navagiter bar-->
+
+    <div class="navebar">
+        <ul>
+            <li><a href="AboutUs.html" title="who am I? :)">ABOUT US</a></li>
+            <li><a href="Service.html" title="our services">SERVICES</a></li>
+            <li><a href="contacts.html"title="do you want help?">CONTACT US</a></li>
+        </ul>
+    </div>
+    <a href="index.html"><img src="logo.png" title="logo" class="logo"> 
+    </a>
+
+        
+                  <!---paragraph section-->
+
+                 <div class="info-text">
+                 <div class="pra">
+  
+                 <small  style="color: cornsilk;"><br>
+                 <h1 class="h1">What is cloud computing? </h1>
+
+                 
+
+                 <h2>Cloud computing refers to any kind of hosted service delivered over the internet.<br>
+                 These services often include servers, databases, software, networks, analytics and other <br>
+                 computing functions that can be operated through the cloud.<br>
+                 Files and programs stored in the cloud can be accessed anywhere by users on the service, <br>
+                 eliminating the need to always be near physical hardware. In the past, for example, user-created<br>
+                 documents and spreadsheets had to be saved to a physical hard drive, USB drive or disk. <br> </h2>
+                 <br>
+                 <br>
+                   
+                                
+                  <!---website linkls-->
+
+                   
+                     
+
+                 <h1 class="pra2"> What cloud computing services are available?</h1><br>
+                 <div class="pra2-text">
+                 Cloud computing services cover a vast range of options now, from the basics of storage, <br>
+                 <br>
+                 <br>Google Drive is popular because of its free storage capacity.<br>
+                 <a href="https://www.google.com/intl/ar_om/drive/">Click here to go Google Drive</a>
+                 <br>
+                 <br>Microsoft OneDrive provides free storage of up to 5GB to store your files and photos.<br>
+                 <a href="https://www.microsoft.com/ar-ww/microsoft-365/onedrive/online-cloud-storage">Click here to go OneDrive</a>
+                    <br>
+                 <br> Box provides a platform for the teams to store, share and collaborate on files.<br>
+                 <a href="box.com/home">Click here to go Box</a>
+                 <br>
+                 <br>iCloud is Apple’s service for providing cloud storage.<br>
+                 <a href="https://www.icloud.com/">Click here to go iCloud</a>
+                 <br>
+                 <br>Dropbox provides you with a modern workspace to keep your files together at one central place.<br>
+                 <a href="https://www.dropbox.com/?landing=dbv2">Click here to go Dropbox</a>
+                <br>
+                
+            </small>
+            </div>
+                 </div>
+  
+        </div>
+
+        <!---graph char-->
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+               google.charts.load('current', {'packages':['corechart']});
+               google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['iCloud',    300],
+          ['Google Drive',     200],
+          ['Microsoft [OneDrive]',      250],
+          ['Dropbox',  300],
+          ['Box', 25],
+         
+        ]);
+
+        var options = {
+          title: 'Number of users per Cloud storage service'
+        };
+        
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }   
+
+    </script>
+ 
+
+      <div id="piechart" class="chargraph"></div>
+      <p class="srs">
+        Source [ https://www.beencrypted.com/ ]
+    </p>
+
+      <br>
+
+        <section class="headre">
+            <div class="contact-box">
+            </div>
+
+             <!--buttons-->
+
+             <button class="read-more"><a href="Readmore.html"><span></span>Read more</button></a>
+        </section>
+
+        <style>
+
+            /*css codes*/
+
+
+
+           .pra{
+
+                font-size: 17px;
+                text-align: center;
+
+                   }
+
+                   .pra2-text{
+                    font-size: 20px;
+                   }
+
+                   
+
+
+            .pra2{
+
+            
+            
+            border: 1px solid rgb(235, 238, 235) ;
+            box-shadow: 5px 10px #f0eeee;
+            box-sizing: 50%;
+            width: 30%; height: 80px;
+            align-items: center;
+            text-align: center;
+            margin:0 auto;
+            
+            
+           }
+
+       
+
+
+           .h1{
+            
+            text-align: center;
+            align-items: center;
+            border: 1px solid rgb(235, 238, 235) ;      
+            box-sizing: 50%;
+            box-shadow: 5px 10px #f0eeee;
+            width: 30%; height: 40px;
+            margin:0 auto;
+            font-size: 20px;
+            
+            
+           }
+
+
+
+           .chargraph{
+            text-align: center;
+               margin: 200px auto;
+               width: 600px;
+               height: 300px;
+             /**  color-scheme: #0D283D;**/
+
+           }
+
+           .srs{
+               font-size: 15px;
+               font-family: sans-serif;
+               color: rgb(190, 179, 135);
+               margin-left: 30%;
+               margin-top: -190px;
+           }
+
+        .navebar{
+             width: 90%;
+             margin-left: 30%;
+             margin-top: -30px;
+             padding: 35px 0;
+             display: flex;
+             align-items: center;
+             justify-content: space-between;
+
+         }
+
+
+         .navebar ul li{
+             list-style: none;
+             display: inline-block;
+             margin: 0 20px;
+             position: relative;
+         }
+
+         .navebar ul li a{
+             text-decoration: none;
+             color: #fff;
+             text-transform: uppercase;
+
+         }
+
+         .navebar ul li::after{
+             content: '';
+             height: 3px;
+             width: 0;
+             background: #2c97e4;
+             position: absolute;
+             left: 0;
+             bottom: -8px;
+             transition: 0.5s;
+
+         }
+
+         .navebar ul li:hover::after{
+             width: 100%;
+         }
+
+         .read-more{
+            
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #D9F1FD;
+            background: transparent;
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            left: 594;
+        
+         }
+
+
+         
+         .logo{
+            width: 100px;
+            cursor: pointer;
+            position: relative;
+            top: -120;
+            left: 100;
+        }
+
+        span{
+             background: #D9F1FD;
+             height: 100%;
+             width: 0;
+             border-radius: 25px;
+             position: absolute;
+             left: 0;
+             bottom: 0;
+             z-index: -1;
+             transition: 0.5s;
+         }
+
+         button:hover span{
+             width: 100%;
+         }
+
+         button:hover{
+             border: none;
+         }
+           
+        </style>
+
+
+  
+
+
+
+    </body>
+</html>
